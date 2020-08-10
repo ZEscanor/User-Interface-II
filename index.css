@@ -45,6 +45,10 @@ table {
 * {
     border: 1px solid grey;
 }
+h2{
+    font-size: 40px;
+    margin-bottom:20px;
+}
 a{
     border: 2px black solid;
 }
@@ -61,6 +65,8 @@ a{
 }
 .head nav{
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .intro{
     display:flex;
@@ -74,15 +80,37 @@ footer{
     justify-content: center;
     margin: 5vh;
 }
-.onehh{
-    background-image: url(https://picsum.photos/200/300);
+body.onehh{
+  background-image: url(https://picsum.photos/200/300);
     background-size: cover;
     background-position: center;
     height:30vh;
     margin-top: 40px;
+   /* display: flex;
+    width:100%;
+    border: 2px red solid;*/
+   
 }
+
 body div {
     justify-content: flex-end;
-    display:inline-block;
+    
 
 }
+@media screen and (max-width: 992px) {
+    body {
+      background-color: peachpuff;
+      
+    }
+    body img{
+       
+    }
+    .head{
+        justify-content:space-around;
+        width:100%;
+    }
+    a{
+        display: flex;
+        flex-direction: column;
+    }
+  }
