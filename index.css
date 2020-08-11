@@ -43,7 +43,7 @@ table {
 	border-spacing: 0;
 }
 * {
-    border: 1px solid grey;
+   /* border: 1px solid grey;*/
 }
 h2{
     font-size: 40px;
@@ -80,7 +80,7 @@ footer{
     justify-content: center;
     margin: 5vh;
 }
-body.onehh{
+.onehh{
   background-image: url(https://picsum.photos/200/300);
     background-size: cover;
     background-position: center;
@@ -91,18 +91,24 @@ body.onehh{
     border: 2px red solid;*/
    
 }
+body p{
+    
+}
 
 body div {
-    justify-content: flex-end;
+    justify-content: flex-start;
+    display:inline-block;
     
 
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 800px) {
     body {
       background-color: peachpuff;
       
     }
     body img{
+        margin-left:30px;
+        margin-right:30px;
        
     }
     .head{
@@ -112,5 +118,11 @@ body div {
     a{
         display: flex;
         flex-direction: column;
+    }
+    .onehh{
+        margin-left: 20px;
+        margin-right:20px;
+        margin-bottom: 10px;
+
     }
   }
